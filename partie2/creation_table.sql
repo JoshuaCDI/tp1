@@ -48,6 +48,7 @@ CREATE TABLE maintenances (
     CONSTRAINT fk_maintenance_travailleur
         FOREIGN KEY (travailleur_id)
         REFERENCES travailleurs(travailleur_id)
+        ON DELETE SET NULL
 );
 
 CREATE TABLE mesures_croissance (
