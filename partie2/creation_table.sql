@@ -2,18 +2,22 @@ CREATE TABLE especes (
     espece_id SERIAL PRIMARY KEY,
     nom VARCHAR(100) NOT NULL UNIQUE,
     climat VARCHAR(100) NOT NULL,
-    duree_vie INT NOT NULL CHECK (duree_vie > 0)
+    duree_vie INT NOT NULL CHECK (duree_vie > 0),
+    adaptation_climatique VARCHAR(255),
+    propriete_croissance VARCHAR(255)
 );
 
 CREATE TABLE emplacements (
     emplacement_id SERIAL PRIMARY KEY,
     nom VARCHAR(100) NOT NULL,
     adresse VARCHAR(255) NOT NULL,
+    type_zone VARCHAR(15),
     UNIQUE (nom, adresse)
 );
 
 CREATE TABLE travailleurs (
     travailleur_id INT PRIMARY KEY,
+    prenom VARCHAR(100),
     nom VARCHAR(100) NOT NULL
 );
 
