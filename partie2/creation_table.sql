@@ -23,6 +23,7 @@ CREATE TABLE travailleurs (
 
 CREATE TABLE arbres (
     arbre_id INT PRIMARY KEY,
+    date_plantation DATE,
     espece_id INT NOT NULL,
     emplacement_id INT NOT NULL,
     CONSTRAINT fk_arbre_espece
