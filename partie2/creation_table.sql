@@ -37,7 +37,7 @@ CREATE TABLE arbres (
 CREATE TABLE maintenances (
     maintenance_id SERIAL PRIMARY KEY,
     arbre_id INT NOT NULL,
-    travailleur_id INT NOT NULL,
+    travailleur_id INT,
     date_maintenance DATE NOT NULL,
     type_maintenance VARCHAR(50) NOT NULL CHECK (
         type_maintenance IN ('arrosage', 'taille', 'inspection')
