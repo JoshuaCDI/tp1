@@ -17,7 +17,6 @@ CREATE TABLE emplacements (
 
 CREATE TABLE travailleurs (
     travailleur_id INT PRIMARY KEY,
-    prenom VARCHAR(100),
     nom VARCHAR(100) NOT NULL
 );
 

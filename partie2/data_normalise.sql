@@ -1,18 +1,18 @@
-INSERT INTO especes (nom, climat, duree_vie)
+INSERT INTO especes (nom, climat, duree_vie, adaptation_climatique, propriete_croissance)
 VALUES
-('Oak', 'Temperate', 120),
-('Pine', 'Cold', 200),
-('Maple', 'Temperate', 80),
-('Birch', 'Cold', 60),
-('Willow', 'Temperate', 90);
+('Oak', 'Temperate', 120, NULL, NULL),
+('Pine', 'Cold', 200, NULL, NULL),
+('Maple', 'Temperate', 80, NULL, NULL),
+('Birch', 'Cold', 60, NULL, NULL),
+('Willow', 'Temperate', 90, NULL, NULL);
 
-INSERT INTO emplacements (nom, adresse)
+INSERT INTO emplacements (nom, adresse, type_zone)
 VALUES
-('Central Park', 'Montreal North'),
-('Riverside Park', 'Montreal East'),
-('Downtown Garden', 'Montreal Center'),
-('North Forest Zone', 'Montreal North-West'),
-('Lakeside Area', 'Montreal South');
+('Central Park', 'Montreal North', NULL),
+('Riverside Park', 'Montreal East', NULL),
+('Downtown Garden', 'Montreal Center', NULL),
+('North Forest Zone', 'Montreal North-West', NULL),
+('Lakeside Area', 'Montreal South', NULL);
 
 INSERT INTO travailleurs (travailleur_id, nom)
 VALUES
