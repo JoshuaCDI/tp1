@@ -1,5 +1,6 @@
 # Documentation de conception
-
+Xavier Chabot &
+Joshua Vasquez
 ## 1.1 Diagrammes de classes UML
 À partir du contexte nous avons identifié 6 entités:
 - Arbre
@@ -39,5 +40,4 @@
   - **Intégrité référentielle** : 
   
   Toutes les clés étrangères structurelles (`id_espece`, `id_emplacement` dans Arbre, `id_arbre` dans SuiviCroissance et ActiviteMaintenance) sont NOT NULL, car l'énoncé impose explicitement ces liens.
-
 
